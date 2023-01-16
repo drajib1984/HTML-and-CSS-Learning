@@ -102,3 +102,24 @@ h6 {
     text-align: center;
 }
 
+.hero{
+    padding: 3rem;
+}
+.hero .hero-image{
+    font-size: 350px;
+    margin: auto;
+    display:block;
+}
+.hero .special-color{
+    color: var(--google-color);
+}
+.section{
+    padding: 2rem;
+
+}
+.section.color-black{
+    background-color: black;
+}
+.color-grey{
+    background-color: grey;
+}
