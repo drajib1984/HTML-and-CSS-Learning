@@ -73,8 +73,9 @@
     <p class = "para">
       its written starting with "<"ul">" and inide it "<"li">". Its shown below
     </p>
+    <p> This list won't have bullets</p>
 
-    <ul>
+    <ul class="list-non-bullet">
       <li>Item One</li>
       <li>Item Two</li>
       <li>Item Three</li>
@@ -85,9 +86,9 @@
     <p class = "para">Unorder inline list can be made with the help of CSS</p>
 
     <ul>
-      <li>Item one</li>
-      <li>Item Two</li>
-      <li>Item Three</li>
+      <li class="list-inline">Item one</li>
+      <li class="list-inline">Item Two</li>
+      <li class="list-inline">Item Three</li>
     </ul>
     <hr />
 
@@ -107,24 +108,24 @@
     <h5>Reverse Ordered List</h5>
     <p class = "para">Reverse ordered list cam be achived with CSS</p>
 
-    <ol>
+    <ol reversed>
       <li>Item one</li>
       <li>Item Two</li>
       <li>Item Three</li>
     </ol>
     <hr />
     <h4>@navigation</h4>
-    <nav>
-      <div>I am a brand Rajib. Click on the link below</div>
-      <ul>
-        <li>
-          <a href="/">About Me</a>
+    <nav class="navigation">
+      <div class="nav-brand">I am a brand Rajib. Click on the link below</div>
+      <ul class="list-non-bullet">
+        <li class="list-inline">
+          <a class="link" href="/">About Me</a>
         </li>
-        <li>
-          <a href="/">Products</a>
+        <li class="list-inline">
+          <a class="link" href="/">Products</a>
         </li>
-        <li>
-          <a href="/">Home</a>
+        <li class="list-inline">
+          <a class="link"href="/">Home</a>
         </li>
       </ul>
     </nav>
