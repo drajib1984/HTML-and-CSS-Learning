@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About HTML : Key features & tags</title>
+</head>
+<body>
+    <h1>HEADING</h1>
+    <p>The headings are represent by h1,h2..h6. h1 is the highest level of all HTML headings. 
+        Headings range from h1 (highest ranked) to h6 (lowest ranked).
+    </p>
+    <hr>
+    <h1>Paragraph</h1>
+    <p>
+        "p" represents a paragraph. To add a new paragraph, simply insert the new paragraph inside a new set of "p" tags.
+    </p>
+    <p>
+        "p" represents a paragraph. To add a new paragraph, simply insert the new paragraph inside a new set of "p" tags.
+    </p>
+    <hr>
+    <h1>Breaking more than 1 sentence into new lines</h1>
+    <p>You can use "br" to break the sentences into a new line.Below is the example</p>
+    <p>
+        I am Rajib Das.<br>I live in Toronto.<br>I came to Canada in 2020
+    </p>
+    <hr>
+    <h1>Lists</h1>
+    <p>
+        HTML includes various tags for different types of lists. Here's an explanation.
+        <dl>
+            <dt><strong>Unorderd List</strong> </dt>
+            <dd>The "ul" element represents an unordered list. An unordered list is a list where the list items are listed in no 
+            particular order. Therefore, each list item can be listed without numbers or other ordering mechanisms. An unordered 
+            list will typically be displayed with round or square bullet points next to each item (as opposed to numbers or letters etc). 
+            </dd>
+            <dt><strong>Ordered List</strong></dt>
+            <dd>
+                "ol" element represents an ordered list. An ordered list is a list where the items have been ordered intentionally. 
+                The main point of an ordered list is that the list items need to be ordered in order to convey the intended meaning.
+            </dd>
+            <dt><strong>Defination List</strong></dt>
+            <dd>
+                "dl" represents a definition list. In a definition list, each list item contains two or more entries; a term and at least one 
+                description. The term is represented by the "dt" element and the description is represented by the "dd" element. 
+            </dd>
+        </dl>
+    </p>
+    <hr>
+    <h1>HTML attributes</h1>
+    <p>
+        Attributes are extra pieces of code that can be inserted inside an HTML tag. They allow you to define how an HTML element 
+        should be presented or how it should behave.
+    </p>
+    <ol start="5">
+        <li>Orange</li>
+        <li>Banana</li>
+        <li>Apple</li>
+        <li>Mango</li>
+    </ol>
+    <p>
+        In the above example, the "ol" tag has had an attribute added to it. The attribute is called "start" and its value is 5. 
+        This attribute allows us to specify what number to start the list at.Similarly, we can have attribute for a reverse ordered list
+    </p>
+    <ol reversed start="2">
+        <li>Orange</li>
+        <li>Banana</li>
+        <li>Apple</li>
+        <li>Mango</li>
+    </ol>
+    <p>
+        For reverse ordered list I used "ol reversed start=2"
+    </p>
+    <hr>
+    <h1>HTML Links</h1>
+    <p>
+        The above link is an example of a hyperlink. A hyperlink is a link that allows the user to navigate to another resource 
+        (such as a web page) or download it (such as in downloading a file). In this case, we link to Google.
+        <br>
+        A hyperlink is created by using the "a href" tag, which is used to specify the destination URL.
+        <br>
+        The "a href" tag has a start and end tag. Any text or element between the start and end tag becomes the "clickable" part. 
+        You'll notice that most web browsers will display hyperlinked text in a different color and underlined. However, as with 
+        any HTML element, you do have control over how the link is styled by using CSS.
+    </p>
+    <a href="https://www.google.com/">Google</a>
+    <hr>
+    <h1>Image & alt attribute with image</h1>
+    <p>
+        In HTML, you add images to a web page by using the "img src" tag, which is used to specify the image location.The 
+        "img src" tag does not have an end tag. Only the start tag is allowed.
+    </p>
+    <p>
+        The image must be at the specified location, otherwise you will end up with a "broken image". This means that, if the image 
+        doesn't already exist on the web, you'll need to upload it before it will work on the web.
+    </p>
+    <p>
+        The image must have the alt attribute specified. This attribute is used to provide a description of the image. 
+        This is important, as it is possible that not all users will be able to see the image.
+        <br>
+        Here are some examples of where the alt attribute can be beneficial:
+    </p>
+    <ul>
+        <li>User has disabled images on their browser.</li>
+        <li>User has a slow internet connection, and images sometimes don't load.</li>
+        <li>User is using text to speech software or a voice web browser. This could be because the user has a vision impairement, 
+            or it could simply be that the user has chosen to use this feature to give his/her eyes a rest. It could also be that 
+            the user finds it easier to listen to long blocks of text than to read. In these cases, the software would read out any 
+            alt text and the image will still make sense to the user.
+        </li>
+        <li>
+            User is using a text-only browser.
+        </li>
+        <li>
+            There's a problem with the image (or the HTML) resulting in a "broken image".
+        </li>
+    </ul>
+    <img src = "photos/flower.svg" alt="image of a flower">
+    <hr>
+    <h1>HTML Tables</h1>
+    <p1>
+        In HTML, you can create a table by using the "table" tag along with the "tr" and "td" tags:
+        <br>
+        Each "tr" element represents a table row. Each "td" element represents a data cell.
+        <br>
+        The "th" is used for table heading
+        <br>
+        The "table" element supports the "border" and the "sortable" attributes.Using the border attribute will typically result in 
+        the browser rendering a basic border around the table and its cells.
+        <br>
+        Two other attributes you might find useful when working with tables are the "colspan" and "rowspan" attributes. These can be used 
+        with the "th" and "td" elements. They allow you to specify how many columns or rows the cell can merge/span.
+        "caption" is used to give the table name
+    </p1>
+    <table border="2">
+        <caption>
+            Country-Capital-Official Language
+        </caption>
+        <tr>
+            <th>Country Name</th>
+            <th>Capital</th>
+            <th>Official Language</th>
+        </tr>
+        <tr>
+            <td>India</td>
+            <td>New Delhi</td>
+            <td>Hindi</td>
+        </tr>
+        <tr>
+            <td>Bangladesh</td>
+            <td>Dhaka</td>
+            <td>Bengali</td>
+        </tr>
+        <tr>
+            <td>Pakistan</td>
+            <td>Islamabad</td>
+            <td>Urdu</td>
+        </tr>
+        <tr>
+            <td rowspan="2">USA</td>
+            <td>New York</td>
+            <td>English</td>
+        </tr>
+        <tr>
+            <td>New York</td>
+            <td>English</td>
+        </tr>
+        <tr>
+            <td colspan="2">Merging 2 columns</td>
+            <td>----</td>
+        </tr>
+        <tr>
+            <td>Sri Lanka</td>
+            <td>Colombo</td>
+            <td>Sinhala</td>
+        </tr>
+    </table>
+
+</body>
+</html>
