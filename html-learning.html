@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About HTML : Key features & tags</title>
 </head>
-<body>
-    <h1>HEADING</h1>
+<body style="background-color: bisque;">
+    <h1><i>HEADING</i></h1>
     <p>The headings are represent by h1,h2..h6. h1 is the highest level of all HTML headings. 
         Headings range from h1 (highest ranked) to h6 (lowest ranked).
     </p>
@@ -34,11 +34,28 @@
             <dd>The "ul" element represents an unordered list. An unordered list is a list where the list items are listed in no 
             particular order. Therefore, each list item can be listed without numbers or other ordering mechanisms. An unordered 
             list will typically be displayed with round or square bullet points next to each item (as opposed to numbers or letters etc). 
+            <br>
+            
+
             </dd>
             <dt><strong>Ordered List</strong></dt>
             <dd>
                 "ol" element represents an ordered list. An ordered list is a list where the items have been ordered intentionally. 
                 The main point of an ordered list is that the list items need to be ordered in order to convey the intended meaning.
+
+                Also, for ordered list if you don't want the numbers you can shange them by using "type" tag.
+                <ol>
+                  <li>Apple</li>
+                  <li>Banana</li>
+                  <li>Grapes</li>
+                </ol>  
+              <p>Now by using "type:" attribute</p>
+              <ol type="i">
+                  <li>Apple</li>
+                  <li>Banana</li>
+                  <li>Grapes</li>
+  
+              </ol>   
             </dd>
             <dt><strong>Defination List</strong></dt>
             <dd>
@@ -73,6 +90,21 @@
         For reverse ordered list I used "ol reversed start=2"
     </p>
     <hr>
+    <h1><b>Inline and Block elements</b></h1>
+    <dl>
+        <dt>Inline element</dt>
+        <dd>The inline elements are those that take the space till the text length, for example anchor links and span 
+            <br>
+            <a style="background-color: red;" href="/">Google   </a>
+            <a style="background-color: blue;" href="/">facebook</a>
+        </dd>
+        <dt>Block elements</dt>
+        <dd>Block elements are those that take the entire width of webpage, eg paragraph and div
+            <p style="background-color: aqua;">This is Rajib</p>
+            <p style="background-color: greenyellow;">I am learning coding</p>
+        </dd>
+       
+    </dl>
     <h1>HTML Links</h1>
     <p>
         The above link is an example of a hyperlink. A hyperlink is a link that allows the user to navigate to another resource 
@@ -85,6 +117,11 @@
         any HTML element, you do have control over how the link is styled by using CSS.
     </p>
     <a href="https://www.google.com/">Google</a>
+    <p>Now if you observe, once you clicked on Google link it opended up in same browser, other way to say that client is moving way 
+        from your browser. Now in order to link to opne a new brower, set the tag "target=_blank". Click on the google link below
+    </p>
+
+    <a href="https://www.google.com/" target="_blank">Google - opening on a new tab</a>
     <hr>
     <h1>Image & alt attribute with image</h1>
     <p>
@@ -116,8 +153,39 @@
             There's a problem with the image (or the HTML) resulting in a "broken image".
         </li>
     </ul>
-    <img src = "photos/flower.svg" alt="image of a flower">
+    <img src = "photos-and-videos/flower.svg" alt="image of a flower">
+    <p>Also you can set the image width & height by using "width" & "height" attributes</p>
+    <img src="http://thescienceexplorer.com/sites/thescienceexplorer.com/files/blog/tyrannosaurus-855188_1280.jpg"
+    alt="image of dino">
+    <p>In addition to setting both width & height , you can choose to set any one. By doing this HTML will automatically adjust the 
+        aspect ratio.
+    </p>  
+
+    <img height="300px" src ="http://thescienceexplorer.com/sites/thescienceexplorer.com/files/blog/tyrannosaurus-855188_1280.jpg"
+    alt="image of a dino">
+
+
     <hr>
+    <h1>Videos</h1>
+    <h2>Videos in computer</h2>
+    <p1>you can either use a video in computer or link from internet/website by using tag "video src". Also , to make the video playable
+        you need to add "controls" tag
+    </p1>
+    <video controls width="500px" src="/photos-and-videos/video.mp4" > Sample video</video>
+    <br>
+    <p1>Also, if yo want to add a poster or thumbnail for the video , you can do so by using tag"poster"</p1>
+    <br>
+    <video height="300px" controls poster="/photos-and-videos/hero.svg" src="/photos-and-videos/video.mp4">Sample video</video>
+    <br>
+    <h2>Videos on line (You Tube)</h2>
+    <p1>Go to You tube , click on the video you want to link, click on share and get embedded link and simply paste in HTML</p1>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-GfNEDs3ERw" title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen></iframe>
+
+
+
     <h1>HTML Tables</h1>
     <p1>
         In HTML, you can create a table by using the "table" tag along with the "tr" and "td" tags:
@@ -214,7 +282,46 @@
             top performers will have opportunities to pursue growth within the Sales organization.
         </p>
         </dd>
+        <br>
+        <dt><b>Text - SubScript and Super script</b></dt>
+        <dd> When you want a letter below the normal line, for e.g you want to write the chemical formula of water, you need to use
+            sub script using the tag "sub". This is way as shown - H<sub>2</sub>O
+        </dd>
+        <dd> When you want a letter above the normal line, you use the super script. For example you want to write 10 to the power 3
+            It can be written using tag "sup". This the way aas shown 10<sup>3</sup> 
+        </dd>
+        <dt><b>Styles & Colors</b></dt>
+        <dd style="color:red;background-color: aqua;">
+            Styles & colors are mainly covered in CSS. However, just have a basic idea where you can tags like "color", 
+            "background-color" for basic styling.
+        </dd>
     </dl>
+    <h1> How to write in a correct HTML format best for Reading/optimization/ SEO / reusability</h1>
+    <header>
+        <h2>Use "header" tag for top of website</h2>
+        <nav style="display: inline;">Social 1</nav>
+        <nav style="display: inline;">Social 2</nav>
+        <nav style="display: inline;">Social 3</nav>
+        <p> Inside the header you can mention various links by using "nav" tag and creating the link in them</p>
+    </header>
+    <main>
+        <h3>Use "main" tag to write the body of the page.</h3>
+        <article>
+            <section>
+                Inside the "main tag", we write various articles, details about website, basically everything about the website by using
+                "article" tag.Now if you have diffent topics or sections or subjects, inside the article tag use "section" tag to difffrentiate 
+                among them.
+            </section>
+            <br>
+            <section>
+                Writing in diffrent sections about the diffrent topics make easy for search engine to go thru HTML page and find out
+                the required content. 
+            </section>
+        </article>
+        <footer>
+            <h3>Use "footer" tag to write the footeer section of the web page</h3>
+        </footer>
+    </main>
 
 </body>
 </html>
