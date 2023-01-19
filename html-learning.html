@@ -4,6 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .london{
+            background-color: black;
+            color: bisque;
+            padding: 30px;
+        }
+        .delhi{
+            background-color: #FF8F1C;
+            color: black;
+            margin: 20px;
+            padding: 30px;
+        }
+        .main{
+            font-weight: bolder;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-style: oblique;
+            font-size: xx-large;
+        }
+        .dhaka{
+            background-color: green;
+            color: white;
+            font-style: italic;
+        }
+    </style>
     <title>About HTML : Key features & tags</title>
 </head>
 <body style="background-color: bisque;">
@@ -173,7 +197,7 @@
     <a href="mailto: drajib0510@gmail.com">Send an email</a>
     <p><strong>BUtton as link: </strong>You can use &lt button onclick &gt for creating a button to link to a new site</p>
 
-    <button onclick="https://www.google.com/">Click for google</button>
+    <!-- <button onclick="https://www.google.com/">Click for google</button> -->
     <p><strong>Create a BookMark with &lt a href &gt</strong></p>
     <p>You can create a book mark by using &lt a href = "#(to the particular bookmarked location & marking the bookmarked position 
         with "id") &gt. Below is the example where I will go to HTML tables
@@ -421,7 +445,25 @@
     
     <a href="https://www.w3schools.com/html/html_entities.asp" target="_blank" title="Checkout HTML Entities">HTML Entities</a>
 
+<h1>Importance of adding class</h1>
+<p>The class attribute is often used to point to a class name in a style sheet. It can also be used by a JavaScript to access and 
+    manipulate elements with the specific class name.
+<br>
+    In the following example we have three &lt div &gt elements with a class attribute with the value of "city". All of the three 
+    &lt div &gt elements will be styled equally according to the .city style definition in the head section:</p>
 
+    <div class="london">
+        <h2>London</h2>
+        <p>London is capital of England</p>
+    </div>
+    <div class="delhi main">
+        <h2>New Delhi</h2>
+        <p>New Delhi is the capital of India</p>
+    </div>
+    <div class="dhaka">
+        <h2>Dhaka</h2>
+        <p>Dhaka is the capital of Bangladesh</p>
+    </div>
 
 </body>
 </html>
