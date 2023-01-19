@@ -30,7 +30,7 @@
     <p>
         HTML includes various tags for different types of lists. Here's an explanation.
         <dl>
-            <dt><strong>Unorderd List</strong> </dt>
+            <dt><strong>Unordered List</strong> </dt>
             <dd>The "ul" element represents an unordered list. An unordered list is a list where the list items are listed in no 
             particular order. Therefore, each list item can be listed without numbers or other ordering mechanisms. An unordered 
             list will typically be displayed with round or square bullet points next to each item (as opposed to numbers or letters etc). 
@@ -43,7 +43,7 @@
                 "ol" element represents an ordered list. An ordered list is a list where the items have been ordered intentionally. 
                 The main point of an ordered list is that the list items need to be ordered in order to convey the intended meaning.
 
-                Also, for ordered list if you don't want the numbers you can shange them by using "type" tag.
+                Also, for ordered list if you don't want the numbers you can change them by using "type" tag.
                 <ol>
                   <li>Apple</li>
                   <li>Banana</li>
@@ -57,7 +57,7 @@
   
               </ol>   
             </dd>
-            <dt><strong>Defination List</strong></dt>
+            <dt><strong>Definition List</strong></dt>
             <dd>
                 "dl" represents a definition list. In a definition list, each list item contains two or more entries; a term and at least one 
                 description. The term is represented by the "dt" element and the description is represented by the "dd" element. 
@@ -92,16 +92,28 @@
     <hr>
     <h1><b>Inline and Block elements</b></h1>
     <dl>
+        
+        <dt>Block elements</dt>
+        <dd>Block-level elements form a visible block on a page. A block-level element appears on a new line following the content 
+            that precedes it. Any content that follows a block-level element also appears on a new line. Block-level elements are 
+            usually structural elements on the page. For example, a block-level element might represent headings, paragraphs, lists, 
+            navigation menus, or footers. A block-level element wouldn't be nested inside an inline element, but it might be nested 
+            inside another block-level element.
+            <br>
+            Block elements are those that take the entire width of webpage, eg paragraph and div
+            <p style="background-color: aqua;">This is Rajib</p>
+            <p style="background-color: greenyellow;">I am learning coding</p>
+        </dd>
         <dt>Inline element</dt>
-        <dd>The inline elements are those that take the space till the text length, for example anchor links and span 
+        <dd>Inline elements are contained within block-level elements, and surround only small parts of the document's content 
+            (not entire paragraphs or groupings of content). An inline element will not cause a new line to appear in the document. 
+            It is typically used with text, for example an &lt a &gt element creates a hyperlink, and elements such as 
+            &lt em &gt or &lt strong &gt create emphasis.
+            <br>
+            The inline elements are those that take the space till the text length, for example anchor links and span 
             <br>
             <a style="background-color: red;" href="/">Google   </a>
             <a style="background-color: blue;" href="/">facebook</a>
-        </dd>
-        <dt>Block elements</dt>
-        <dd>Block elements are those that take the entire width of webpage, eg paragraph and div
-            <p style="background-color: aqua;">This is Rajib</p>
-            <p style="background-color: greenyellow;">I am learning coding</p>
         </dd>
        
     </dl>
@@ -117,8 +129,8 @@
         any HTML element, you do have control over how the link is styled by using CSS.
     </p>
     <a href="https://www.google.com/">Google</a>
-    <p>Now if you observe, once you clicked on Google link it opended up in same browser, other way to say that client is moving way 
-        from your browser. Now in order to link to opne a new brower, set the tag "target=_blank". Click on the google link below
+    <p>Now if you observe, once you clicked on Google link it opened up in same browser, other way to say that client is moving way 
+        from your browser. Now in order to link to open a new browser, set the tag "target=_blank". Click on the google link below
     </p>
 
     <a href="https://www.google.com/" target="_blank">Google - opening on a new tab</a>
@@ -141,7 +153,7 @@
     <ul>
         <li>User has disabled images on their browser.</li>
         <li>User has a slow internet connection, and images sometimes don't load.</li>
-        <li>User is using text to speech software or a voice web browser. This could be because the user has a vision impairement, 
+        <li>User is using text to speech software or a voice web browser. This could be because the user has a vision impairment, 
             or it could simply be that the user has chosen to use this feature to give his/her eyes a rest. It could also be that 
             the user finds it easier to listen to long blocks of text than to read. In these cases, the software would read out any 
             alt text and the image will still make sense to the user.
@@ -199,7 +211,7 @@
         <br>
         Two other attributes you might find useful when working with tables are the "colspan" and "rowspan" attributes. These can be used 
         with the "th" and "td" elements. They allow you to specify how many columns or rows the cell can merge/span.
-        "caption" is used to give the table name
+        "caption" is used to give the table name.
     </p1>
     <table border="2">
         <caption>
