@@ -115,6 +115,12 @@
             <a style="background-color: red;" href="/">Google   </a>
             <a style="background-color: blue;" href="/">facebook</a>
         </dd>
+        <dt>Void Element</dt>
+        <dd>
+            Not all elements follow the pattern of an opening tag, content, and a closing tag. Some elements consist of a single tag, 
+            which is typically used to insert/embed something in the document. Such elements are called void elements. For example, 
+            the &lt img &gt element embeds an image file onto a page:
+        </dd>
        
     </dl>
     <h1>HTML Links</h1>
@@ -134,6 +140,11 @@
     </p>
 
     <a href="https://www.google.com/" target="_blank">Google - opening on a new tab</a>
+
+    <p>The "title" attribute specifies extra information about the link, such as a description of the page that is being linked to. 
+    For example, title="The Google homepage". This appears as a tooltip when a cursor hovers over the element.See the below 
+    example</p>
+    <a href="https://www.google.com/" target="_blank" title="Google Homepage-click to proceed">Google</a>
     <hr>
     <h1>Image & alt attribute with image</h1>
     <p>
@@ -329,11 +340,25 @@
                 Writing in diffrent sections about the diffrent topics make easy for search engine to go thru HTML page and find out
                 the required content. 
             </section>
+    </main>
         </article>
         <footer>
             <h3>Use "footer" tag to write the footeer section of the web page</h3>
         </footer>
-    </main>
+    
+
+    <h1> HTML Entities</h1>    
+    <p>In HTML, the characters <, >,",' and & are special characters. They are parts of the HTML syntax itself. So how do you include 
+        one of these special characters in your text? For example, if you want to use an ampersand or less-than sign, and not have it 
+        interpreted as code.
+        You do this with character references. These are special codes that represent characters, to be used in these exact 
+        circumstances. Each character reference starts with an ampersand (&), and ends with a semicolon (;).
+    </p>
+    <p>Below is the link for Entities</p>
+    
+    <a href="https://www.w3schools.com/html/html_entities.asp" target="_blank" title="Checkout HTML Entities">HTML Entities</a>
+
+
 
 </body>
 </html>
