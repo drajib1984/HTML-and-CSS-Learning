@@ -8,7 +8,7 @@
 </head>
 <body style="background-color: bisque;">
     <h1><i>HEADING</i></h1>
-    <p>The headings are represent by h1,h2..h6. h1 is the highest level of all HTML headings. 
+    <p>The <u>headings</u> are <ins>represented</ins> by h1,h2..h6. h1 is the highest level of all HTML headings. 
         Headings range from h1 (highest ranked) to h6 (lowest ranked).
     </p>
     <hr>
@@ -20,11 +20,22 @@
         "p" represents a paragraph. To add a new paragraph, simply insert the new paragraph inside a new set of "p" tags.
     </p>
     <hr>
-    <h1>Breaking more than 1 sentence into new lines</h1>
+    <h1>Breaking more than 1 sentence into new lines using "br" & "pre"</h1>
     <p>You can use "br" to break the sentences into a new line.Below is the example</p>
     <p>
         I am Rajib Das.<br>I live in Toronto.<br>I came to Canada in 2020
     </p>
+    <p> The HTML &lt pre &gt element defines preformatted text.
+    The text inside a &lt pre &gt element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and 
+    line breaks:</p>
+    <pre>
+        My Bonnie lies over the ocean.
+  My Bonnie lies over the sea.
+
+                   My Bonnie lies over the ocean.
+
+  Oh, bring back my Bonnie to me.
+    </pre>
     <hr>
     <h1>Lists</h1>
     <p>
@@ -34,6 +45,18 @@
             <dd>The "ul" element represents an unordered list. An unordered list is a list where the list items are listed in no 
             particular order. Therefore, each list item can be listed without numbers or other ordering mechanisms. An unordered 
             list will typically be displayed with round or square bullet points next to each item (as opposed to numbers or letters etc). 
+            <ul>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul>
+            <p>By default the markings are in bullets, you can change them by using style = "list-style: circle/square/none</p>
+
+            <ul style="list-style: square;">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul>
             <br>
             
 
@@ -141,12 +164,24 @@
 
     <a href="https://www.google.com/" target="_blank">Google - opening on a new tab</a>
 
-    <p>The "title" attribute specifies extra information about the link, such as a description of the page that is being linked to. 
-    For example, title="The Google homepage". This appears as a tooltip when a cursor hovers over the element.See the below 
-    example</p>
+    <p>The "title" attribute specifies extra information about the link, such as a description of the page that is being linked to known
+        as tooltip.For example, title="The Google homepage". This appears as a tooltip when a cursor hovers over the element.
+        See the below example</p>
     <a href="https://www.google.com/" target="_blank" title="Google Homepage-click to proceed">Google</a>
+    <p>Also, if you want to make a link to click to send email you can use the "a href = mailto:" </p>
 
     <a href="mailto: drajib0510@gmail.com">Send an email</a>
+    <p><strong>BUtton as link: </strong>You can use &lt button onclick &gt for creating a button to link to a new site</p>
+
+    <button onclick="https://www.google.com/">Click for google</button>
+    <p><strong>Create a BookMark with &lt a href &gt</strong></p>
+    <p>You can create a book mark by using &lt a href = "#(to the particular bookmarked location & marking the bookmarked position 
+        with "id") &gt. Below is the example where I will go to HTML tables
+    </p>
+    <br>
+    <a href="#Table" target="_blank" title="Table">Click to go to HTML table</a>
+
+
     <hr>
     <h1>Image & alt attribute with image</h1>
     <p>
@@ -189,6 +224,15 @@
     <img height="300px" src ="http://thescienceexplorer.com/sites/thescienceexplorer.com/files/blog/tyrannosaurus-855188_1280.jpg"
     alt="image of a dino">
 
+    <p><strong>Image Floating</strong></p>
+    <p>Use the CSS float property to let the image float to the right or to the left of a text:</p>
+    <p>The image will float to the right of the text.
+        <img src="https://media.tenor.com/NSrAFkmmOdMAAAAi/smile-smiley.gif" height="50px" alt="Smile image" style="float:right;">
+    </p>
+    <p>The image will float at left
+        <img src="	https://media.tenor.com/NSrAFkmmOdMAAAAi/smile-smiley.gif" alt="smile" height="20px" style="float: left;">
+    </p>
+
 
     <hr>
     <h1>Videos</h1>
@@ -211,7 +255,7 @@
 
 
 
-    <h1>HTML Tables</h1>
+    <h1 id="Table">HTML Tables</h1>
     <p1>
         In HTML, you can create a table by using the "table" tag along with the "tr" and "td" tags:
         <br>
@@ -294,8 +338,16 @@
         <p style="text-decoration: underline;">My name is Rajib</p>
         <p style="text-decoration: line-through;">My name is Rajib</p>
         <p style="text-decoration: overline;">My name is Rajib</p>
+
+        <p>Now to put a line-through a particular word or to color th background/highlight of a word in a sentence, you cannot use the 
+            CSS style saying line-through or background-color . You need to use "del" to make line-through and "mark" to highlight.
+            Below is the example
+        </p>
+        <p>I am now changing the color <del>red by striking out</del> and adding new color green by highlighting the process of 
+        <mark>photosynthesis</mark>  </p>
         </dd>
         <br>
+        
         <dt><b>Indenting Text</b></dt>
         <dd>Indent the first line of text in a paragraph with the "style=text-indent" property
         <p style="text-indent: 200px;">TouchBistro is looking for a Mid-Market Business Development Representative to join our Sales team! Reporting to the Manager,
@@ -320,6 +372,15 @@
             Styles & colors are mainly covered in CSS. However, just have a basic idea where you can tags like "color", 
             "background-color" for basic styling.
         </dd>
+        <dt><strong>Understand the details of CSS Box model - Content/Padding/Border/Margin</strong></dt>
+        <dd style="border: 2px solid orange;">The CSS border property defines a border around an HTML element.</dd>
+        <br>
+        <dd style="border: 2px solid green; padding: 30px;">The CSS padding property defines a padding (space) between 
+            the text and the border.
+        </dd>
+        <dd style="border: 2px solid red; padding: 30px; margin: 100px;background-color: aqua;">The CSS margin property 
+            defines a margin (space) outside the border.</dd>
+
     </dl>
     <h1> How to write in a correct HTML format best for Reading/optimization/ SEO / reusability</h1>
     <header>
@@ -334,7 +395,7 @@
         <article>
             <section>
                 Inside the "main tag", we write various articles, details about website, basically everything about the website by using
-                "article" tag.Now if you have diffent topics or sections or subjects, inside the article tag use "section" tag to difffrentiate 
+                "article" tag.Now if you have different topics or sections or subjects, inside the article tag use "section" tag to difffrentiate 
                 among them.
             </section>
             <br>
