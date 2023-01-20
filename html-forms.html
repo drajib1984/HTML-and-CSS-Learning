@@ -9,25 +9,32 @@
   <body>
     <h2>This is HTML form learning</h2>
 
-    <form action="backend.php" method="get">
-      <div>Name : <input type="text" name="myName" /></div>
+    <form>
+      <label for="name">Name</label>
+      <div><input type="text" name="myName" id="name" /></div>
       <br />
-      <div>Role : <input type="text" name="myRole" /></div>
+      <label for="role">Role</label>
+      <div><input type="text" name="myRole" id="role" /></div>
       <br />
-      <div>Email : <input type="email" name="myEmail" /></div>
+      <label for="email">Email</label>
+      <div><input type="email" name="myEmail" id="email" /></div>
       <br />
-      <div>Time: <input type="time" name="myTime" /></div>
+      <label for="time">Time</label>
+      <div><input type="time" name="myTime" id="time" /></div>
       <br />
-      <div>Bonus: <input type="number" name="myBonus" /></div>
+      <label for="bonus">Bonus Pay</label>
+      <div><input type="number" name="bonus" id="bonus" /></div>
       <br />
+      <label for="eligibility">Are you eligible?</label>
       <div>
-        Are you eligible? <input type="checkbox" name="eligibility" id="" />
+        Yes<input type="checkbox" name="eligibility" id="eligibility" />
       </div>
       <br />
+      <label for="gender">Tell me your gender:</label>
       <div>
-        Tell me your gender: Male <input type="radio" name="gender" /> Female
-        <input type="radio" name="gender" /> Other
-        <input type="radio" name="gender" />
+        Male <input type="radio" name="gender" id="gender" /> Female
+        <input type="radio" name="gender" id="gender" /> Other
+        <input type="radio" name="gender" id="gender" />
       </div>
       <br />
       <div>Upload your photo <input type="file" name="myPhoto" /></div>
@@ -38,9 +45,21 @@
         <textarea name="Desc" cols="30" rows="20"></textarea>
       </div>
       <br />
-      <div>Submit : <input type="button" value="click to submit" /></div>
+      <div>
+        <label for="car">Select your car</label>
+        <select name="myCar" id="car">
+          <option value="none"></option>
+          <option value="msil">Maruti</option>
+          <option value="hmil">Hyundai</option>
+          <option value="tml">Tata</option>
+        </select>
+      </div>
       <br />
-      <div>Reset : <input type="reset" value="Reset Now " /></div>
+      <label for="submit"></label>
+      <div><input type="button" value="submit" id="submit" /></div>
+      <br />
+      <label for="reset"></label>
+      <div><input type="button" value="reset" id="reset" /></div>
     </form>
   </body>
 </html>
