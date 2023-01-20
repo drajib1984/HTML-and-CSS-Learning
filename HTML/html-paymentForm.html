@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DEMO-Payment Form</title>
+  </head>
+  <body>
+    <form action="">
+      <header>
+        <h1>Payment Form</h1>
+        <p>Required fields are followed by *.</p>
+      </header>
+      <main>
+        <article>
+          <section>
+            <h2>Contact Information</h2>
+            <fieldset>
+              <legend style="margin: 1rem">Title</legend>
+
+              <label for="king">King</label>
+              <input type="radio" name="king" id="king" />
+
+              <label for="queen">Queen</label>
+              <input type="radio" name="queen" id="queen" />
+
+              <label for="joker">Joker</label>
+              <input type="radio" name="joker" id="joker" />
+            </fieldset>
+          </section>
+          <br />
+
+          <section>
+            <div>
+              <label for="name">Name: *</label>
+              <input type="text" name="name" id="name" />
+              <br />
+              <br />
+            </div>
+            <div>
+              <label for="email">Email: *</label>
+              <input type="email" name="email" id="email" />
+              <br />
+              <br />
+            </div>
+            <label for="password">Password: *</label>
+            <input type="password" name="password" id="password" />
+            <br />
+            <br />
+            <label for="Yes">Completed above Details: *</label>
+            <input type="checkbox" name="yes" id="yes" />
+          </section>
+          <section>
+            <h2>Payment Information</h2>
+            <fieldset>
+              <legend style="margin: 1rem">Banking Information</legend>
+              <h2>Card Details</h2>
+              <label for="card">Card type: </label>
+              <select name="card" id="card">
+                Card
+                <option value="none"></option>
+                <option value="visa">Visa</option>
+                <option value="mc">MasterCard</option>
+                <option value="amex">American Express</option>
+              </select>
+              <br />
+              <br />
+              <label for="card_num">Card Number</label>
+              <input type="tel" name="card_num" id="card_num" required="true" />
+              <br />
+              <br />
+              <label for="expiry">Expiration Date</label>
+              <input
+                type="text"
+                name="expiry"
+                id="expiry"
+                required="true"
+                placeholder="MM/YYYY"
+              />
+              <br />
+              <br />
+              <label for="image">Card Photo: </label>
+              <input type="file" name="image" id="image" />
+              <br />
+              <br />
+              <label for="loan">Select loan amount: *</label>
+              <input
+                type="range"
+                name="loan"
+                id="loan"
+                min="500"
+                max="10000"
+                step="100"
+                value="5000"
+              />
+              <p>need javaScript to display the amount in loan</p>
+            </fieldset>
+          </section>
+        </article>
+      </main>
+      <footer>
+        <fieldset>
+          <legend style="margin: 1rem">Final step</legend>
+          <h2>Submit or Reset</h2>
+          <label for="feedback">Please share your feedback</label>
+          <br />
+          <textarea
+            name="feedback"
+            id="feedback"
+            cols="30"
+            rows="10"
+            placeholder="let us know your thoughts"
+          ></textarea>
+          <br />
+          <br />
+          <label for="submit">Submit</label>
+          <input type="submit" value="submit" />
+          <label for="reset">Reset</label>
+          <input type="reset" value="reset" />
+        </fieldset>
+      </footer>
+    </form>
+  </body>
+</html>
