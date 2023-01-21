@@ -31,28 +31,30 @@
     <title>About HTML : Key features & tags</title>
 </head>
 <body style="background-color: bisque;">
-    <h1><i>HEADING</i></h1>
-    <p>The <u>headings</u> are <ins>represented</ins> by h1,h2..h6. h1 is the highest level of all HTML headings. 
+    <h1><em>HEADING</em></h1>
+    <p>The <mark>headings</mark> are <ins>represented</ins> by h1,h2..h6. h1 is the highest level of all HTML headings. 
         Headings range from h1 (highest ranked) to h6 (lowest ranked).
     </p>
     <hr>
     <h1>Paragraph</h1>
     <p>
-        "p" represents a paragraph. To add a new paragraph, simply insert the new paragraph inside a new set of "p" tags.
+        &lt p &gt &lt /p &gt represents a paragraph. To add a new paragraph, simply insert the new paragraph inside a new set of 
+        &lt p &gt &lt /p &gt tags.
     </p>
     <p>
-        "p" represents a paragraph. To add a new paragraph, simply insert the new paragraph inside a new set of "p" tags.
+        &lt p &gt &lt /p &gt represents a paragraph. To add a new paragraph, simply insert the new paragraph inside a new set of 
+        &lt p &gt &lt /p &gt tags.
     </p>
     <hr>
     <h1>Breaking more than 1 sentence into new lines using "br" & "pre"</h1>
-    <p>You can use "br" to break the sentences into a new line.Below is the example</p>
+    <p>You can use &lt br &gt to break the sentences into a new line.There is no closing tag for brake. Below is the example</p>
     <p>
         I am Rajib Das.<br>I live in Toronto.<br>I came to Canada in 2020
     </p>
     <p> The HTML &lt pre &gt element defines preformatted text.
-    The text inside a &lt pre &gt element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and 
-    line breaks:</p>
-    <pre>
+    The text inside a &lt pre &gt element is displayed in a fixed-width font (usually Courier, However you can change using style), and 
+    it preserves both spaces and line breaks:</p>
+    <pre style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
         My Bonnie lies over the ocean.
   My Bonnie lies over the sea.
 
@@ -65,16 +67,18 @@
     <p>
         HTML includes various tags for different types of lists. Here's an explanation.
         <dl>
-            <dt><strong>Unordered List</strong> </dt>
-            <dd>The "ul" element represents an unordered list. An unordered list is a list where the list items are listed in no 
-            particular order. Therefore, each list item can be listed without numbers or other ordering mechanisms. An unordered 
-            list will typically be displayed with round or square bullet points next to each item (as opposed to numbers or letters etc). 
+            <dt><strong><u>Unordered List</u></strong> </dt>
+            <br>
+            <dd>The &lt ul &gt &lt /ul &gt element represents an unordered list. An unordered list is a list where the list items are 
+            listed in no particular order. Therefore, each list item can be listed without numbers or other ordering mechanisms. An 
+            unordered list will typically be displayed with round or square bullet points next to each item (as opposed to numbers or 
+            letters etc). 
             <ul>
                 <li>Coffee</li>
                 <li>Tea</li>
                 <li>Milk</li>
             </ul>
-            <p>By default the markings are in bullets, you can change them by using style = "list-style: circle/square/none</p>
+            <p>By default the markings are in bullets, you can change them by using style = "list-style: circle/square/none"</p>
 
             <ul style="list-style: square;">
                 <li>Coffee</li>
@@ -82,65 +86,57 @@
                 <li>Milk</li>
             </ul>
             <br>
-            
-
             </dd>
-            <dt><strong>Ordered List</strong></dt>
+            <dt><strong><u>Ordered List</u></strong></dt>
+            <br>
             <dd>
-                "ol" element represents an ordered list. An ordered list is a list where the items have been ordered intentionally. 
-                The main point of an ordered list is that the list items need to be ordered in order to convey the intended meaning.
-
-                Also, for ordered list if you don't want the numbers you can change them by using "type" tag.
+                &lt ol &gt &lt /ol &gt element represents an ordered list. An ordered list is a list where the items have been ordered 
+                intentionally. The main point of an ordered list is that the list items need to be ordered in order to convey the 
+                intended meaning. Also, for ordered list if you don't want the numbers you can change them by using "type" tag.
                 <ol>
                   <li>Apple</li>
                   <li>Banana</li>
                   <li>Grapes</li>
                 </ol>  
-              <p>Now by using "type:" attribute</p>
+              <p>Now by using "type" attribute</p>
               <ol type="i">
                   <li>Apple</li>
                   <li>Banana</li>
                   <li>Grapes</li>
-  
               </ol>   
             </dd>
-            <dt><strong>Definition List</strong></dt>
+            <p> You can use "start" with ordered list to state from where numbering can be started </p>
+            <ol start="5">
+                <li>Orange</li>
+                <li>Banana</li>
+                <li>Apple</li>
+                <li>Mango</li>
+            </ol>
+            <p>
+                In the above example, the &lt ol start="5" &gt &lt /ol &gt tag has had an attribute added to it. The attribute is 
+                called "start" and its value is 5. This attribute allows us to specify what number to start the list at.Similarly, 
+                we can have attribute for a reverse ordered list. In below example the &lt reversed ol start="2" &gt &lt /ol &gt.
+            </p>
+            <ol reversed start="2">
+                <li>Orange</li>
+                <li>Banana</li>
+                <li>Apple</li>
+                <li>Mango</li>
+            </ol>
+            <br>
+            <dt><strong><u>Definition List</u></strong></dt>
+            <br>
             <dd>
-                "dl" represents a definition list. In a definition list, each list item contains two or more entries; a term and at least one 
-                description. The term is represented by the "dt" element and the description is represented by the "dd" element. 
+                "dl" represents a definition list. In a definition list, each list item contains two or more entries; a term and at least 
+                one description. The term is represented by the "dt" element and the description is represented by the "dd" element. 
             </dd>
         </dl>
-    </p>
-    <hr>
-    <h1>HTML attributes</h1>
-    <p>
-        Attributes are extra pieces of code that can be inserted inside an HTML tag. They allow you to define how an HTML element 
-        should be presented or how it should behave.
-    </p>
-    <ol start="5">
-        <li>Orange</li>
-        <li>Banana</li>
-        <li>Apple</li>
-        <li>Mango</li>
-    </ol>
-    <p>
-        In the above example, the "ol" tag has had an attribute added to it. The attribute is called "start" and its value is 5. 
-        This attribute allows us to specify what number to start the list at.Similarly, we can have attribute for a reverse ordered list
-    </p>
-    <ol reversed start="2">
-        <li>Orange</li>
-        <li>Banana</li>
-        <li>Apple</li>
-        <li>Mango</li>
-    </ol>
-    <p>
-        For reverse ordered list I used "ol reversed start=2"
     </p>
     <hr>
     <h1><b>Inline and Block elements</b></h1>
     <dl>
         
-        <dt>Block elements</dt>
+        <dt><strong><u>Block elements</u></strong> </dt>
         <dd>Block-level elements form a visible block on a page. A block-level element appears on a new line following the content 
             that precedes it. Any content that follows a block-level element also appears on a new line. Block-level elements are 
             usually structural elements on the page. For example, a block-level element might represent headings, paragraphs, lists, 
@@ -151,7 +147,7 @@
             <p style="background-color: aqua;">This is Rajib</p>
             <p style="background-color: greenyellow;">I am learning coding</p>
         </dd>
-        <dt>Inline element</dt>
+        <dt><strong><u>Inline element</u></strong></dt>
         <dd>Inline elements are contained within block-level elements, and surround only small parts of the document's content 
             (not entire paragraphs or groupings of content). An inline element will not cause a new line to appear in the document. 
             It is typically used with text, for example an &lt a &gt element creates a hyperlink, and elements such as 
@@ -159,34 +155,35 @@
             <br>
             The inline elements are those that take the space till the text length, for example anchor links and span 
             <br>
-            <a style="background-color: red;" href="/">Google   </a>
-            <a style="background-color: blue;" href="/">facebook</a>
+            <a style="background-color: rgb(0, 255, 4);" href="https://www.google.com/" target="_blank">Google</a> i can write here
+            <br>
+            <a style="background-color: rgb(15, 95, 180);" href="https://www.facebook.com/" target="_blank">facebook</a> i can write here
         </dd>
-        <dt>Void Element</dt>
+        <br>
+        <dt><strong><u>Void Element</u></strong></dt>
         <dd>
             Not all elements follow the pattern of an opening tag, content, and a closing tag. Some elements consist of a single tag, 
             which is typically used to insert/embed something in the document. Such elements are called void elements. For example, 
             the &lt img &gt element embeds an image file onto a page:
-        </dd>
-       
+        </dd>     
     </dl>
     <h1>HTML Links</h1>
     <p>
-        The above link is an example of a hyperlink. A hyperlink is a link that allows the user to navigate to another resource 
+        The below link is an example of a hyperlink. A hyperlink is a link that allows the user to navigate to another resource 
         (such as a web page) or download it (such as in downloading a file). In this case, we link to Google.
         <br>
-        A hyperlink is created by using the "a href" tag, which is used to specify the destination URL.
+        A hyperlink is created by using the &lt a href &gt &lt /a &gt , which is used to specify the destination URL.
         <br>
-        The "a href" tag has a start and end tag. Any text or element between the start and end tag becomes the "clickable" part. 
+        The &lt a href &gt tag has a start and end tag. Any text or element between the start and end tag becomes the "clickable" part. 
         You'll notice that most web browsers will display hyperlinked text in a different color and underlined. However, as with 
-        any HTML element, you do have control over how the link is styled by using CSS.
+        any HTML element, you do have control over how the link is styled by using CSS.Removed the underline below
     </p>
-    <a href="https://www.google.com/">Google</a>
+    <a href="https://www.google.com/" style="text-decoration: none;">Google</a>
     <p>Now if you observe, once you clicked on Google link it opened up in same browser, other way to say that client is moving way 
         from your browser. Now in order to link to open a new browser, set the tag "target=_blank". Click on the google link below
     </p>
 
-    <a href="https://www.google.com/" target="_blank">Google - opening on a new tab</a>
+    <a href="https://www.google.com/" target="_blank" title="google-new tab">Google - opening on a new tab</a>
 
     <p>The "title" attribute specifies extra information about the link, such as a description of the page that is being linked to known
         as tooltip.For example, title="The Google homepage". This appears as a tooltip when a cursor hovers over the element.
@@ -195,22 +192,20 @@
     <p>Also, if you want to make a link to click to send email you can use the "a href = mailto:" </p>
 
     <a href="mailto: drajib0510@gmail.com">Send an email</a>
-    <p><strong>BUtton as link: </strong>You can use &lt button onclick &gt for creating a button to link to a new site</p>
-
-    <!-- <button onclick="https://www.google.com/">Click for google</button> -->
+   
     <p><strong>Create a BookMark with &lt a href &gt</strong></p>
     <p>You can create a book mark by using &lt a href = "#(to the particular bookmarked location & marking the bookmarked position 
         with "id") &gt. Below is the example where I will go to HTML tables
     </p>
     <br>
-    <a href="#Table" target="_blank" title="Table">Click to go to HTML table</a>
+    <a href="#Table"  title="Table">Click to go to HTML table</a>
 
 
     <hr>
     <h1>Image & alt attribute with image</h1>
     <p>
-        In HTML, you add images to a web page by using the "img src" tag, which is used to specify the image location.The 
-        "img src" tag does not have an end tag. Only the start tag is allowed.
+        In HTML, you add images to a web page by using the &lt img src &gt tag, which is used to specify the image location.The 
+        &lt img src &gt tag does not have an end tag. Only the start tag is allowed.
     </p>
     <p>
         The image must be at the specified location, otherwise you will end up with a "broken image". This means that, if the image 
@@ -251,7 +246,7 @@
     <p><strong>Image Floating</strong></p>
     <p>Use the CSS float property to let the image float to the right or to the left of a text:</p>
     <p>The image will float to the right of the text.
-        <img src="https://media.tenor.com/NSrAFkmmOdMAAAAi/smile-smiley.gif" height="50px" alt="Smile image" style="float:right;">
+        <img src="https://media.tenor.com/NSrAFkmmOdMAAAAi/smile-smiley.gif" height="20px" alt="Smile image" style="float:right;">
     </p>
     <p>The image will float at left
         <img src="	https://media.tenor.com/NSrAFkmmOdMAAAAi/smile-smiley.gif" alt="smile" height="20px" style="float: left;">
@@ -261,14 +256,14 @@
     <hr>
     <h1>Videos</h1>
     <h2>Videos in computer</h2>
-    <p1>you can either use a video in computer or link from internet/website by using tag "video src". Also , to make the video playable
-        you need to add "controls" tag
+    <p1>you can either use a video in computer or link from internet/website by using tag &lt video src &gt . Also , to make the video 
+        playable you need to add "controls" tag
     </p1>
-    <video controls width="500px" src="/photos-and-videos/video.mp4" > Sample video</video>
+    <video controls width="500px" src="/HTML/photos-and-videos/video.mp4" > Sample video</video>
     <br>
     <p1>Also, if yo want to add a poster or thumbnail for the video , you can do so by using tag"poster"</p1>
     <br>
-    <video height="300px" controls poster="/photos-and-videos/hero.svg" src="/photos-and-videos/video.mp4">Sample video</video>
+    <video controls height="300px" src="/HTML/photos-and-videos/video.mp4" poster="/HTML/photos-and-videos/flower.svg" >Sample video</video>
     <br>
     <h2>Videos on line (You Tube)</h2>
     <p1>Go to You tube , click on the video you want to link, click on share and get embedded link and simply paste in HTML</p1>
@@ -281,11 +276,12 @@
 
     <h1 id="Table">HTML Tables</h1>
     <p1>
-        In HTML, you can create a table by using the "table" tag along with the "tr" and "td" tags:
+        In HTML, you can create a table by using the &lt table &gt &lt /table &gt tag along with the &lt tr &gt &lt /tr &gt and 
+        &lt td &gt &lt /td &gt tags:
         <br>
-        Each "tr" element represents a table row. Each "td" element represents a data cell.
+        Each &lt tr &gt &lt /tr &gt element represents a table row. Each &lt td &gt &lt /td &gt element represents a data cell.
         <br>
-        The "th" is used for table heading
+        The &lt th &gt &lt /th &gt is used for table heading inside &lt tr &gt &lt /tr &gt
         <br>
         The "table" element supports the "border" and the "sortable" attributes.Using the border attribute will typically result in 
         the browser rendering a basic border around the table and its cells.
@@ -298,6 +294,9 @@
         <caption>
             Country-Capital-Official Language
         </caption>
+        <tr>
+            <th colspan="3">Merging all 3 cells in a heading</th>
+        </tr>
         <tr>
             <th>Country Name</th>
             <th>Capital</th>
@@ -315,11 +314,11 @@
         </tr>
         <tr>
             <td>Pakistan</td>
-            <td>Islamabad</td>
+            <td>Islamabad</td> 
             <td>Urdu</td>
         </tr>
         <tr>
-            <td rowspan="2">USA</td>
+            <td rowspan="2">USA(Merging 2 rows)</td>
             <td>New York</td>
             <td>English</td>
         </tr>
@@ -342,8 +341,8 @@
         <dt><strong>Bold text</strong></dt>
         <dd>You can make a statement bold by using <strong>"strong"</strong> tag</dd>
         <dd>You can also make a statement bold by using <b>"b"</b> tag</dd>
-        <dd>Also there is an option of using attribute "style=font-weight" to make the text look diffrently.Below is the example</dd>
-       <dd> <p style="font-weight: bold;"> My name is Raib</p>
+        <dd>Also there is an option of using attribute "style=font-weight" to make the text look differently.Below is the example</dd>
+       <dd> <p style="font-weight: bold;"> My name is Rajib</p>
         <p style="font-weight: bolder;">My name is Rajib</p>
         <p style="font-weight: lighter;">My name is Rajib</p>
         </dd>
@@ -378,7 +377,7 @@
             Business Development, you will promote TouchBistro and generate relationships with mid to large sized restaurant owners and 
             operators through prospecting and qualifying leads through cold outreach via phone, email and text.Joining TouchBistro as a
             Mid-Market Business Development Representative, we are committed to providing you with a concrete foundation to develop 
-            your sales skills starting from day 1, kicking it all off with our Sales Bootcamp! You will have continuous learning 
+            your sales skills starting from day 1, kicking it all off with our Basecamp! You will have continuous learning 
             opportunities through weekly 1:1 and coaching sessions with leadership to help you excel. We value hard work; consistent 
             top performers will have opportunities to pursue growth within the Sales organization.
         </p>
@@ -411,7 +410,9 @@
         <h2>Use "header" tag for top of website</h2>
         <nav style="display: inline;">Social 1</nav>
         <nav style="display: inline;">Social 2</nav>
-        <nav style="display: inline;">Social 3</nav>
+        <nav style="display: inline;">
+            <a href="https://www.facebook.com/" target="_blank" style="text-decoration: none;" title="FB">Facebook</a>
+            </nav>
         <p> Inside the header you can mention various links by using "nav" tag and creating the link in them</p>
     </header>
     <main>
@@ -419,18 +420,18 @@
         <article>
             <section>
                 Inside the "main tag", we write various articles, details about website, basically everything about the website by using
-                "article" tag.Now if you have different topics or sections or subjects, inside the article tag use "section" tag to difffrentiate 
+                "article" tag.Now if you have different topics or sections or subjects, inside the article tag use "section" tag to differentiate 
                 among them.
             </section>
             <br>
             <section>
-                Writing in diffrent sections about the diffrent topics make easy for search engine to go thru HTML page and find out
+                Writing in different sections about the different topics make easy for search engine to go thru HTML page and find out
                 the required content. 
             </section>
     </main>
         </article>
         <footer>
-            <h3>Use "footer" tag to write the footeer section of the web page</h3>
+            <h3>Use "footer" tag to write the footer section of the web page</h3>
         </footer>
     
 
