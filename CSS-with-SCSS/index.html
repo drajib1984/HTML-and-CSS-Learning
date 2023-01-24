@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS with Scss</title>
+    <link rel="stylesheet" href="/CSS-with-SCSS/css/main.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container">
+        <a href="#">Remember<span>That</span></a>
+        <img
+          id="mobile-cta"
+          class="mobile-menu"
+          src="/CSS-with-SCSS/images/menu.svg"
+          alt="mobile-navigation-bar"
+          title="navigation"
+        />
+        <nav>
+          <img
+            id="mobile-exit"
+            class="mobile-menu-exit"
+            src="/CSS-with-SCSS/images/close.svg"
+            alt="close-menu"
+            title="close navigation"
+          />
+          <ul class="primary-nav">
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+
+          <ul class="secondary-nav">
+            <li><a href="#">Contact</a></li>
+            <li class="go-premium-cta"><a href="#">Premium</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="container">
+        <div class="left-col">
+          <p class="subhead">It's Nitty &amp; Gritty</p>
+          <h1>A Task App That Doesn't Stink</h1>
+          <div class="hero-cta">
+            <a href="#" class="primary-cta">Try for Free</a>
+            <a href="#" class="watch-video-cta">
+              <img
+                src="/CSS-with-SCSS/images/videocam.svg"
+                alt="Watch a Video"
+                title="Watch-video"
+              />
+            </a>
+          </div>
+        </div>
+        <img
+          class="hero-img"
+          src="/CSS-with-SCSS/images/illustration.svg"
+          alt="hero-image"
+          title="hero-image"
+        />
+      </div>
+    </section>
+    <section class="feature-section">
+      <div class="container">
+        <ul>
+          <li>Unlimited Tasks</li>
+          <li>SMS Task Reminders</li>
+          <li>Confetti Explosions on Task Task Completions</li>
+          <li>Social Media Announcements</li>
+          <li>Real Time Collaborations</li>
+          <li>Other Awesome Features</li>
+        </ul>
+        <img
+          src="/CSS-with-SCSS/images/holding-phone.jpg"
+          alt="Man holding Phone"
+          title="Man holding Phone"
+        />
+      </div>
+    </section>
+    <section class="testimonials-section">
+      <div class="container">
+        <ul>
+          <li>
+            <img
+              src="/CSS-with-SCSS/images/person.jpg"
+              alt="Person"
+              title="Person"
+            />
+            <blockquote>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum
+              similique cum et nesciunt totam. Accusamus aut dicta dolore ipsam
+              quasi alias sed eveniet cumque exercitationem harum aliquid
+              repellat, sapiente magni?
+            </blockquote>
+            <cite>-Jane Doe</cite>
+          </li>
+          <li>
+            <img
+              src="/CSS-with-SCSS/images/person.jpg"
+              alt="Person"
+              title="Person"
+            />
+            <blockquote>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum
+              similique cum et nesciunt totam. Accusamus aut dicta dolore ipsam
+              quasi alias sed eveniet cumque exercitationem harum aliquid
+              repellat, sapiente magni?
+            </blockquote>
+            <cite>-Jane Doe</cite>
+          </li>
+          <li>
+            <img
+              src="/CSS-with-SCSS/images/person.jpg"
+              alt="Person"
+              title="Person"
+            />
+            <blockquote>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum
+              similique cum et nesciunt totam. Accusamus aut dicta dolore ipsam
+              quasi alias sed eveniet cumque exercitationem harum aliquid
+              repellat, sapiente magni?
+            </blockquote>
+            <cite>-Jane Doe</cite>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="contact-left">
+      <div class="container">
+        <h2>Contact</h2>
+
+        <form action="https://httpbin.org/get" method="get">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Your Name"
+            required
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="youremail@email.com"
+            required
+          />
+
+          <label for="text">Message</label>
+          <textarea
+            name="text"
+            id="text"
+            cols="30"
+            rows="10"
+            placeholder="type your message"
+            required
+          ></textarea>
+          <input type="submit" value="Send Message" />
+        </form>
+      </div>
+      <div class="contact-right">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58142.7184266199!2d92.124609286744!3d24.38408967572655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3751ece5d004e9d1%3A0x7aea66e60718b4f5!2sDharmanagar%2C%20Tripura%2C%20India!5e0!3m2!1sen!2sca!4v1674536162516!5m2!1sen!2sca"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+  </body>
+</html>
